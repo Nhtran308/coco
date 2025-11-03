@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr {
+    display: block;
+
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    /* Áp dụng Roboto cho tất cả các phần tử */
+}
+
+.roboto {
+    font-family            : 'Roboto', sans-serif;
+    font-optical-sizing    : auto;
+    font-weight            : 400;
+    font-style             : normal;
+    font-variation-settings: "wdth"100;
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width:640px) {
+    a.active {
+        background-color: black;
+        color           : white;
+    }
+}

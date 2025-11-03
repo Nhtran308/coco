@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.roboto {
+    font-family            : 'Roboto', sans-serif;
+    font-optical-sizing    : auto;
+    font-weight            : 400;
+    font-style             : normal;
+    font-variation-settings: "wdth"100;
+}
+
+select,
+input,
+textarea {
+    border       : 1px solid #c2c2c2;
+    outline-color: #C586A5;
+    border-radius: 4px;
+}
+
+.active {
+    background-color: #ffebf5;
+    border-color    : #C586A5;
+}
