@@ -8,7 +8,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   const currency = "VND";
   const delivery_fee = "50000";
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = "https://coco-backend-ywp8.onrender.com";
   const [search, setSearch] = useState("");
   const [showSearch, setShowSearch] = useState(true);
   const [cartItems, setCartItems] = useState({});
