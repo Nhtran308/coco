@@ -1,34 +1,33 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Cart from "./pages/Cart";
-import Collection from "./pages/Collection";
 import Contact from "./pages/Contact";
-import Login from "./pages/Login";
-import Orders from "./pages/Orders";
-import Profile from "./pages/Profile";
-import PlaceOrder from "./pages/PlaceOrder";
-import Product from "./pages/Product";
-import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import VerifyMomo from "./pages/VerifyMomo";
-import SearchBar from "./components/SearchBar";
 import ResetPassword from "./pages/ResetPassword";
-import DiscountBanner from "./components/DiscountBanner";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Verify from "./pages/Verify";
 import Success from "./pages/Success";
-import ScrollToTop from "./components/ScrollToTop";
 import ChangePassword from "./pages/ChangePassword";
+import HeaderNavigation from "./components/user/navigation/HeaderNavigation";
+import ScrollToTop from "./components/user/ui/ScrollToTop";
+import SearchBar from "./components/user/ui/SearchBar";
+import Footer from "./components/user/footer/Footer";
+import {
+  About,
+  Cart,
+  Collection,
+  Home,
+  PlaceOrder,
+  Profile,
+  Orders,
+  Product,
+  Login,
+  NotFound,
+} from "./pages/user";
 
 const App = () => {
   return (
     <>
-      <DiscountBanner />
-      <Navbar />
+      <HeaderNavigation />
       <ScrollToTop />
       <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] pb-20">
         <ToastContainer />

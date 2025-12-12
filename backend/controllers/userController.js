@@ -130,7 +130,6 @@ const userProfile = async (req, res) => {
 
     res.status(200).json({ success: true, user: safeUser });
   } catch (error) {
-    console.log("Lỗi khi lấy thông tin người dùng:", error);
     res.status(500).json({ success: false, message: "Lỗi server" });
   }
 };

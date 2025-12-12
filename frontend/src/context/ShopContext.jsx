@@ -180,10 +180,7 @@ const ShopContextProvider = (props) => {
       } else {
         toast.error(response.data.message);
       }
-    } catch (error) {
-      console.log(error);
-      toast.error("Lỗi khi tải sản phẩm.");
-    }
+    } catch (error) {}
   };
 
   const getUserCart = async (token) => {
@@ -197,10 +194,7 @@ const ShopContextProvider = (props) => {
         console.log("Received cartData:", response.data.cartData);
         setCartItems(response.data.cartData || {});
       }
-    } catch (error) {
-      console.log(error);
-      toast.error(error.message);
-    }
+    } catch (error) {}
   };
 
   useEffect(() => {

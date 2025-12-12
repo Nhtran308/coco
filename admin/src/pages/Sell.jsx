@@ -23,8 +23,6 @@ const Sell = () => {
         const res = await axios.get(backendUrl + "/api/product/list");
         if (res.data.success) {
           setProducts(res.data.products);
-        } else {
-          toast.error("Lỗi khi tải sản phẩm: " + res.data.message);
         }
       } catch (err) {
         toast.error("Lỗi server khi tải sản phẩm!");

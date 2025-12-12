@@ -7,12 +7,12 @@ import List from "./pages/List";
 import Orders from "./pages/Orders";
 import Report from "./pages/Report";
 import Voucher from "./pages/Voucher";
-import NotFound from "../../frontend/src/pages/NotFound";
 import Login from "./components/Login";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Employee from "./pages/Employee";
 import Sell from "./pages/Sell";
+import { NotFound } from "../../frontend/src/pages/user";
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL;
 export const currency = "VND";
