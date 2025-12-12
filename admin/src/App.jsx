@@ -14,7 +14,7 @@ import Employee from "./pages/Employee";
 import Sell from "./pages/Sell";
 import { NotFound } from "../../frontend/src/pages/user";
 
-export const backendUrl = import.meta.env.VITE_BACKEND_URL;
+export const backendUrl = "https://coco-backend-ywp8.onrender.com";
 export const currency = "VND";
 
 const App = () => {
