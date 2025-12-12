@@ -3,7 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export const backendUrl = import.meta.env.VITE_BACKEND_URL;
+export const backendUrl = "https://coco-backend-ywp8.onrender.com";
 
 const Sell = () => {
   const [products, setProducts] = useState([]);
